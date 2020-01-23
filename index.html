@@ -1,1 +1,216 @@
-Hello World
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Jun Zeng, Berkeley Ph.D. student working on Robotics and Control</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le styles -->
+    <link href="./assets_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets_files/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./assets_files/yangqing.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="icon" href="./assets_files/favicon.ico">
+</head>
+
+<div class="visible-phone" id="blackBar">
+    <a href="#top">About</a>
+    <!-- <a href="#research">Research</a> -->
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#professional-activities">Professional Activities</a>
+    <a href="#projects">Projects</a>
+</div>
+
+<body>
+
+<div class="container span3 hidden-phone">
+    <div id="floating_sidebar" class="span3">
+        <!-- We use a fancy nav bar if there is enough space -->
+        <!--<hr class="hidden-phone">-->
+        <br>
+        <ul class="nav nav-list bs-docs-sidenav hidden-phone">
+            <li><a href="#top">About</a></li>
+            <!-- <li><a href="#research">Research</a></li> -->
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#professional-activities">Professional Activities</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <!-- <hr class="hidden-phone"> -->
+        <!-- <div class="text-center hidden-phone">
+            <img src="assets_files/me.png" alt="photo" class="logo-image">
+            <br><br>
+            zengjunsjtu AT berkeley.edu <br>
+        </div> -->
+
+        <!-- Otherwise, we simply use a flat list of links -->
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="span9">
+            <br>
+            <h3>
+                Jun Zeng
+            </h3>
+            <h5>
+                zengjunsjtu AT berkeley DOT edu
+            / <a target="_blank"
+                 href="https://scholar.google.com/citations?user=xBOE358AAAAJ&hl=en">Google Scholar</a>
+            / <a target="_blank" 
+                 href="https://github.com/junzengx14">GitHub</a>
+            <!-- / <a target="_blank"
+                 href="https://drive.google.com/open?id=16ZSY62e2LgWYXuYuX4GVbbJ3OnU9bwl8">CV</a> -->
+            <!-- / <mark>actively looking for PhD position</mark> -->
+            </h5>
+            <!-- Do I want to show a pic on the phone screen?
+            <div class="text-center visible-phone">
+                <img src="assets/img/Yihui.png" alt="photo" width="150px"/>
+            </div>
+            -->
+            <!-- <a class="visible-phone pull-left" href="http://daggerfs.com/index.html#">
+                <img class="media-object" src="assets_files/me.png" width="96px" style="margin: 0px 10px">
+            </a> -->
+            <p>
+                I'm currently a Ph.D. student in the Department of Mechanical Engineering at UC Berkeley, with my interest focus on Robotics and Control. 
+                At UC Berkeley, I focus on the research in control, planning, optimization about aerial-manipulation, with professor <a target="_blank" href="https://me.berkeley.edu/people/koushil-sreenath/">Koushil Sreenath</a>.
+            </p>
+            <p>
+                On the academic side, I'm interested in challenging problems in robotics associated with complex vehicle dynamics.
+                When the system interact with the environments, the surrounding obstacles, planning through contact, safety criteria should be considered, under the constraints of hardware performance and software compatibility.
+                To tackle these problems, model-based methods such as geometric control, hybrid systems theory, barrier functions, computational motion planning, and optimization and deep learning techniques could be applied.
+                We hope to create the safety-critical with optimal guarantees while not just simply restricting robots with conservative policies.
+            </p>
+            <p>
+                On the engineering side, I would like to think about other general topics about robotics. Specially, I enjoy programming with collaboration with other colleagues.
+            </p>
+            <p>
+                In the spare time, I like to read modern literature and enjoy cooking a lot.
+            </p>
+
+            <!--
+             *** Research ***
+            -->
+            <!-- <h3>
+            <a name="research"></a> Research
+            </h3> -->
+            <!-- <p>
+            My current research topics include:
+            </p><ul>
+            <li> Learning better structures for image feature extraction.
+            </li><li> Explaining human generalization behavior with visually grounded cogscience models.
+            </li><li> Making large-scale vision feasible and affordable.
+            </li></ul>
+            <p></p> -->
+            <!--<p> (Most recent publications to be added) </p>-->
+
+
+            <!--
+             *** Publications ***
+            -->
+            <h3>
+                <a name="publications"></a> Publications
+            </h3>
+            
+            <div class="media">
+                <!-- <a name="fsaf" class="pull-left">
+                    <img class="media-object" src="https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/791e7e83d86ef0f28a60ec6eb61dbc784d0300f4/7-Figure8-1.png" width="96px" height="96px">
+                </a> -->
+                <div class="media-body">
+                    <p class="media-heading">
+                        <strong>
+                            Differential Flatness based Path Planning withDirect Collocation on Hybrid Modes for a Quadrotor with a Cable-Suspended Payload
+                        </strong><br>
+                        <strong>Jun Zeng</strong>, Prasanth Kotaru, Mark Mueller, Koushil Sreenath, <strong>RA-L 2020</strong>
+                        <!-- <a target="_blank" href="https://arxiv.org/abs/1903.00621">[arXiv]</a>  -->
+                    </p>
+                    <p class="abstract-text">
+                        We use a coordinate-free geometric formulation and exploit a differential flatness based hybrid model of a quadrotor with a cable-suspended payload.
+                        We perform direct collocation on the differentially-flat hybrid system, and use complementarity constraints to avoid specifying hybrid mode sequences.
+                        The non-differentiable obstacle avoidance constraints are reformulated using dual variables, resulting in smooth constraints.
+                        We show that our approach has lower computational time than the state-of-the-art and guarantees feasibility of the trajectory with respect to both the system dynamics and input constraints without the need to tune lots of parameters.   
+                    </p>
+                </div>
+            </div>
+
+            <!--
+             *** Teaching ***
+            -->
+            <h3>
+                <a name="teaching"></a> Teaching
+            </h3>
+            </p><ul>
+                <li> Spring 2020: <a target="_blank" href="https://www.eecs.berkeley.edu/Courses/EECS206B/">EECS106B/206B - Robotic Manipulation and Interaction</a></li>
+                <li> Fall 2019: <a target="_blank" href="https://www.eecs.berkeley.edu/Courses/EECS206A/">EECS106A/206A - Introduction to Robotics</a></li>
+            </ul><p>
+
+            <!--
+             *** Professional Activities ***
+            -->
+            <h3>
+                <a name="professional-activities"></a> Professional Activities
+            </h3>
+
+            </p>
+            Reviewer for several journals, including:
+            <ul>
+                <li>IEEE Robotics and Automation Letters (RA-L)</li>
+            </ul>
+            <p>
+
+            </p>
+            Reviewer for several conferences, including:
+            <ul>
+                <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
+                <li>IEEE International Conference on Intelligent Robots and Systems (IROS)</li>
+                <li>IEEE American Automatic Conference (ACC)</li>
+                <li>IEEE Conference on Decision and Control (CDC)</li>
+            </ul>
+            <p>
+
+            <!--
+             *** Projects ***
+            -->
+            <h3>
+                <a name="projects"></a> Projects
+            </h3>
+            Link to my <a target="_blank" href="https://github.com/junzengx14">[github public projects]</a>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/application.js"></script>
+-->

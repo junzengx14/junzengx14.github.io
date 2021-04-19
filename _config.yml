@@ -1,11 +1,10 @@
 # Site settings
-title: Yihui He blog
+title: Jun Zeng homepage
 email: zengjunsjtu@berkeley.edu
-description: "Musings of a Computer Scientist."
+description: "Robotics Science and Control Theory"
 baseurl: ""
 url: "http://junzengx14.github.io"
-blogurl: "http://yihui-he.github.io/blog"
-#twitter_username: karpathy
+blogurl: "http://junzengx14.github.io"
 github_username:  junzengx14
 
 # Build settings

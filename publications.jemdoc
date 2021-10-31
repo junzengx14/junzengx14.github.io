@@ -1,0 +1,67 @@
+# jemdoc: menu{MENU}{publications.html}
+
+For latest preprints and publications, please check the page of [https://scholar.google.com/citations?user=xBOE358AAAAJ&hl=en google scholar].
+
+== Publications
+
+[https://arxiv.org/abs/2105.10596
+Enhancing Feasibility and Safety of Nonlinear Model Predictive Control with Discrete-Time Control Barrier Functions.
+]\n
+IEEE Conference on Decision and Control (CDC), 2021.\n
+Jun Zeng, Zhongyu Li, and Koushil Sreenath.
+
+[https://arxiv.org/abs/2103.12375
+Safety-Critical Control with Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility.
+]\n
+American Control Conference (ACC), 2021.\n
+Jun Zeng, Bike Zhang, Zhongyu Li, and Koushil Sreenath.
+
+[https://arxiv.org/abs/2103.12382
+Rule-Based Safety-Critical Control Design using Control Barrier Functions with Application to Autonomous Lane Change.
+]\n
+American Control Conference (ACC), 2021.\n
+Suiyi He, Jun Zeng, Bike Zhang, and Koushil Sreenath.
+
+[https://arxiv.org/abs/2007.11718
+Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function.
+]\n
+American Control Conference (ACC), 2021.\n
+Jun Zeng, Bike Zhang, and Koushil Sreenath.
+
+[https://arxiv.org/abs/2103.14300
+Robotic Guide Dog: Leading a Human with Leash-Guided Hybrid Physical Interaction.
+]\n
+IEEE International Conference on Robotics and Automation (ICRA), 2021.\n
+Anxing Xiao, Wenzhe Tong, Lizhi Yang, Jun Zeng, Zhongyu Li, and Koushil Sreenath.\n
+*This paper was the ICRA Best Paper Award Finalist for Service Robotics.*
+
+[https://arxiv.org/abs/2007.11718
+Autonomous Navigation for Quadrupedal Robots with Optimized Jumping through Constrained Obstacles.
+]\n
+IEEE International Conference on Automation Science and Engineering (CASE), 2021.\n
+Scott Gilroy, Derek Lau, Lizhi Yang, Ed Izaguirre, Kristen Biermayer, Anxing Xiao, Mengti Sun, Ayush Agrawal, Jun Zeng, Zhongyu Li, and Koushil Sreenath.
+
+[https://arxiv.org/abs/2008.00191
+Dynamic Legged Manipulation of a Ball by Mini Cheetah Through Multi-Contact Optimization.
+]\n
+IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020.\n
+Chenyu Yang, Bike Zhang, Jun Zeng, Ayush Agrawal, and Koushil Sreenath.
+
+[https://hybrid-robotics.berkeley.edu/publications/RAL2020_PPQL.pdf
+Differential Flatness based Path Planning with Direct Collocation on Hybrid Modes for a Quadrotor with a Cable-Suspended Payload.
+]\n
+IEEE Robotics and Automation Letters (RA-L), 2020.\n
+Jun Zeng, Prasanth Kotaru, Mark Mueller, and Koushil Sreenath.
+
+[https://hybrid-robotics.berkeley.edu/publications/ACC2019_QuadLoad_Pulley.pdf
+Geometric Control of a Quadrotor with a Load Suspended from an Offset
+]\n
+American Control Conference (ACC), 2019.\n
+Jun Zeng, Prasanth Kotaru, and Koushil Sreenath.
+
+[https://hybrid-robotics.berkeley.edu/publications/ACC2019_QuadLoad_Offset.pdf
+Geometric Control and Differential Flatness of a Quadrotor UAV with Load Suspended from a Pulley.
+]\n
+American Control Conference (ACC), 2019.\n
+Jun Zeng and Koushil Sreenath.
+

@@ -1,3 +1,4 @@
+### Update the homepage
 
 ### Add clustrmap to count number of visitors
 Add clustrmap into `index.html` manually after regeneration.

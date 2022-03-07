@@ -5,6 +5,20 @@ For latest preprints and publications, please check the page of [https://scholar
 
 == Publications
 
+: {[https://arxiv.org/abs/2112.06435
+Autonomous Racing with Multiple Vehicles using a Parallelized Optimization with Safety Guarantee using Control Barrier Functions
+].}
+IEEE International Conference on Robotics and Automation (ICRA), 2022.\n
+Suiyi He, Jun Zeng, and Koushil Sreenath.\n
+[https://github.com/HybridRobotics/car-racing Code], [https://youtu.be/1zTXfzdQ8w4, YouTube].
+
+: {[https://arxiv.org/abs/2109.12313
+Safety-Critical Control and Planning for Obstacle Avoidance between Polytopes with Control Barrier Functions
+].}
+IEEE International Conference on Robotics and Automation (ICRA), 2022.\n
+Akshay Thirugnanam, Jun Zeng, and Koushil Sreenath.\n
+[https://github.com/HybridRobotics/cbf Code], [https://youtu.be/2hKlihdERog, YouTube].
+
 : {[https://arxiv.org/abs/2105.10596
 Enhancing Feasibility and Safety of Nonlinear Model Predictive Control with Discrete-Time Control Barrier Functions
 ].}
@@ -17,7 +31,7 @@ Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Func
 ].}
 American Control Conference (ACC), 2021.\n
 Jun Zeng, Bike Zhang, and Koushil Sreenath.\n
-[https://github.com/HybridRobotics/MPC-CBF Code], [https://github.com/HybridRobotics/Car-Racing Animation], [https://youtu.be/IfNgogcLSjE Presentation at NorCal Control Workshop 2021].
+[https://github.com/HybridRobotics/MPC-CBF Code], [https://github.com/HybridRobotics/car-racing Animation], [https://youtu.be/IfNgogcLSjE Presentation at NorCal Control Workshop 2021].
 
 : {[https://arxiv.org/abs/2103.12375
 Safety-Critical Control with Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility

@@ -281,10 +281,14 @@ a:hover { color: var(--ink); text-decoration: underline; }
 
 .cv-card:last-child { border-bottom: 0; }
 
+/* Wider than tall: the university logos are square, but the company logos are
+   wordmarks (Cruise ~3.4:1, Cyan ~2.1:1) that would shrink to a thin strip in a
+   square box. 110x90 gives them usable width and still centres square marks. */
 .cv-logo {
-  flex: 0 0 90px;
-  width: 90px;
+  flex: 0 0 110px;
+  width: 110px;
   height: 90px;
+  padding: 8px;
   border-radius: 4px;
   background-color: #fff;
   border: 1px solid var(--line);
@@ -528,7 +532,7 @@ a:hover { color: var(--ink); text-decoration: underline; }
   .heading { margin-bottom: 30px; }
   .heading h2 { font-size: 26px; }
   .cv-card { flex-direction: row; gap: 14px; }
-  .cv-logo { flex-basis: 60px; width: 60px; height: 60px; }
+  .cv-logo { flex-basis: 74px; width: 74px; height: 60px; padding: 5px; }
   .cv-lettermark { font-size: 24px; }
   .cv-dates { white-space: normal; }
   .social-links a { font-size: 28px; margin-right: 16px; }

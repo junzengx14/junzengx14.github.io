@@ -2,898 +2,438 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Jun Zeng</title>
-
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets_files/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets_files/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="./assets_files/yangqing.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-
-    <style>
-        /* Contact icon links */
-        .social-links a {
-            font-size: 52px;
-            margin-right: 28px;
-            color: #555;
-            text-decoration: none;
-        }
-
-        .social-links a:hover {
-            color: #2a7ae2;
-        }
-
-        /* The Google Scholar glyph renders bigger than the rest — shrink it to match */
-        .social-links .ai {
-            font-size: 44px;
-        }
-
-        /* Keep icons reasonable on phones */
-        @media (max-width: 767px) {
-            .social-links a {
-                font-size: 36px;
-                margin-right: 18px;
-            }
-
-            .social-links .ai {
-                font-size: 30px;
-            }
-        }
-
-        /* Highlighted (selected) publications — only in the Full view */
-        .pub-selected {
-            background-color: #fff8dc;
-            border-radius: 6px;
-            padding: 8px 10px;
-            margin-left: -10px;
-            margin-right: -10px;
-        }
-
-        #pub-list.show-selected .pub-selected {
-            background-color: transparent;
-            border-radius: 0;
-            padding: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        /* Selected view shows only the selected entries */
-        #pub-list.show-selected>.media {
-            display: none;
-        }
-
-        #pub-list.show-selected>.media.pub-selected {
-            display: block;
-        }
-
-        /* Full/Selected publications toggle */
-        .pub-tab {
-            cursor: pointer;
-        }
-
-        .pub-tab.active {
-            color: #000;
-            font-weight: bold;
-            text-decoration: none;
-            cursor: default;
-        }
-
-        /* Extra breathing room between sections and entries */
-        h3 {
-            margin-top: 30px;
-        }
-
-        #pub-list>.media {
-            margin-top: 25px;
-        }
-    </style>
+    <title>Jun Zeng</title>
+    <meta name="author" content="Jun Zeng">
+    <meta name="description"
+        content="Jun Zeng (曾俊) — CTO at Cyan Robotics, formerly Senior AI/ML Scientist at Cruise. Robotics, optimal control, motion planning and embodied AI.">
+    <meta name="keywords" content="Jun Zeng, 曾俊, robotics, control barrier functions, model predictive control, autonomous driving, UC Berkeley, Cruise, Cyan Robotics">
 
     <link rel="icon" href="./assets_files/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+    <link href="./css/site.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="visible-phone" id="blackBar">
-        <a href="#top">About</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#awards">Awards &amp; Honors</a>
-        <a href="#professional-activities">Professional Activities</a>
-    </div>
 
-    <div class="container span3 hidden-phone">
-        <div id="floating_sidebar" class="span3">
-            <br>
-            <ul class="nav nav-list bs-docs-sidenav hidden-phone">
-                <li><a href="#top">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#awards">Awards &amp; Honors</a></li>
-                <li><a href="#professional-activities">Professional Activities</a></li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="span9">
-                <br>
-                <h2>
-                    Jun Zeng (曾俊)
-                </h2>
-                My technical expertise spans robotics, artificial intelligence, and autonomous systems, with deep
-                experience across optimal control, nonlinear optimization, motion planning, trajectory generation,
-                reinforcement learning, and machine learning. Throughout my career, I have worked on challenging
-                problems at the intersection of decision-making, learning, and physical systems — developing
-                algorithms that allow robots and autonomous vehicles to operate safely and intelligently in complex
-                real-world environments.
-                <br><br>
-
-                I am currently the Chief Technology Officer (CTO) of Cyan Robotics in Shanghai, where I lead the
-                development of
-                Amoo, an embodied companion robot designed to bridge intelligent interaction and physical autonomy. I
-                own the company’s overall technology strategy, roadmap, and system architecture, leading a
-                multidisciplinary engineering team across the full robotics and AI stack — from hardware-software
-                integration, robot control, and autonomous behaviors to foundation models and large language model
-                (LLM)-based intelligence. I have driven Amoo from early-stage research prototypes to a fully
-                integrated consumer product, building scalable technical foundations that enable intelligent
-                perception, reasoning, interaction, and embodied autonomy.
-                <br><br>
-
-                Prior to Cyan Robotics, I was a Senior AI/ML Scientist at
-                <a target="_blank" href="https://www.getcruise.com/">Cruise</a>,
-                where I developed advanced trajectory generation algorithms and large-scale driving models for
-                autonomous vehicles, contributing to the next generation of self-driving technology. My work covered
-                the full autonomy stack, including behavior modeling, planning, prediction, and learning-based
-                approaches for large-scale autonomous systems.
-                <br><br>
-
-                I received my Ph.D. from the
-                <a target="_blank" href="https://hybrid-robotics.berkeley.edu/">Hybrid Robotics Group</a>
-                at the University of California, Berkeley, under the supervision of
-                <a target="_blank" href="https://me.berkeley.edu/people/koushil-sreenath/">Professor Koushil
-                    Sreenath</a>,
-                where I focused on model-based optimization, control, and learning for advanced robotic systems,
-                including aerial and legged robots. My doctoral research explored how analytical models and
-                data-driven methods can be combined to achieve robust and adaptive robot autonomy.
-                Before that, I studied at
-                <a target="_blank" href="https://www.polytechnique.edu/en">École Polytechnique</a>
-                and
-                <a target="_blank" href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>.
-                I have also gained industry and research experience through internships at
-                <a target="_blank" href="https://www.waymo.com">Waymo</a>,
-                <a target="_blank" href="https://www.plus.ai">PlusAI</a>,
-                and
-                <a target="_blank" href="https://www.valeo.com/en/">Valeo</a>,
-                as well as research work at the Autonomous Systems and Robotics Lab at
-                <a target="_blank" href="https://www.ensta-paris.fr/">ENSTA Paris</a>.
-                <br><br>
-
-                I am always glad to have technical discussions and to build new connections — feel free to reach me
-                through social links and the email below.
-
-                <br><br>
-
-                <div class="social-links">
-                    <a href="mailto:zengjunsjtu@berkeley.edu" title="Email" aria-label="Email"><i
-                            class="fa-solid fa-envelope"></i></a>
-                    <a target="_blank" href="https://scholar.google.com/citations?user=xBOE358AAAAJ&hl=en"
-                        title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-                    <a target="_blank" href="https://github.com/junzengx14" title="GitHub" aria-label="GitHub"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/junzengx14/" title="LinkedIn"
-                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://twitter.com/junzengx14" title="Twitter" aria-label="Twitter"><i
-                            class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <br>
-
-                <h3>
-                    <a name="education"></a> Education
-                </h3>
-
-                <div class="media">
-                    <a name="fsaf" class="pull-left">
-                        <img class="media-object" src="assets/education/berkeley.png" width="90px" height="90px">
-                    </a>
-                    <div class="media-body">
-                        <p class="media-heading">
-                            <strong>University of California, Berkeley</strong>, Aug 2017 - May 2022 <br>
-                            Ph.D. in Mechanical Engineering <br>
-                            Advisor: Prof. Koushil Sreenath <br>
-                            Field: Control, Robotics, Machine Learning
-                        </p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <a name="fsaf" class="pull-left">
-                        <img class="media-object" src="assets/education/polytechnique.png" width="90px" height="90px">
-                    </a>
-                    <div class="media-body">
-                        <p class="media-heading">
-                            <strong>Ecole Polytechnique</strong>, Mar 2015 - Aug 2017 <br>
-                            Diplôme d'ingénieur in Applied Mathematics and Mechanics
-                        </p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <a name="fsaf" class="pull-left">
-                        <img class="media-object" src="assets/education/sjtu.png" width="90px" height="90px">
-                    </a>
-                    <div class="media-body">
-                        <p class="media-heading">
-                            <strong>Shanghai Jiao Tong University</strong>, Sep 2012 - May 2016 <br>
-                            Bachelor of Science and Engineering in Automation
-                        </p>
-                    </div>
-                </div>
-
-                <h3>
-                    <a name="publications"></a> Publications
-                </h3>
-                <p>
-                    <a href="javascript:void(0);" id="btn-pub-selected" class="pub-tab active"
-                        onclick="showPubs('selected')">Selected Publications</a> |
-                    <a href="javascript:void(0);" id="btn-pub-full" class="pub-tab" onclick="showPubs('full')">Full
-                        Publications</a>
-                </p>
-                <small>* indicates equal contribution.</small>
-
-                <div id="pub-list" class="show-selected">
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/tvt2026-parking/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Fast Path Planning for Autonomous Vehicle Parking with Safety-Guarantee using
-                                    Hamilton-Jacobi Reachability
-                                </strong><br>
-                                Xuemin Chi, <strong>Jun Zeng</strong>, Jihao Huang, Zhitao Liu, Hongye Su<br>
-                                IEEE Transactions on Vehicular Technology (TVT), 2026<br>
-                                <a target="_blank" href="https://doi.org/10.1109/TVT.2026.3677282">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2310.15190">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ojcsys2025-learning/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Learning-Enabled Iterative Convex Optimization for Safety-Critical Model Predictive
-                                    Control
-                                </strong><br>
-                                Shuo Liu, Zhe Huang, <strong>Jun Zeng</strong>, Koushil Sreenath, Calin A. Belta<br>
-                                IEEE Open Journal of Control Systems (OJ-CSYS), 2025<br>
-                                <a target="_blank" href="https://doi.org/10.1109/OJCSYS.2025.3612245">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2409.08300">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ras2025-drift/cover.png" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Adaptive Learning-based Model Predictive Control Strategy for Drift Vehicles
-                                </strong><br>
-                                Bei Zhou, Cheng Hu, <strong>Jun Zeng</strong>, Zhouheng Li, Johannes Betz, Lei Xie,
-                                Hongye
-                                Su<br>
-                                Robotics and Autonomous Systems, 2025<br>
-                                <a target="_blank" href="https://doi.org/10.1016/j.robot.2025.104941">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2502.04696">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/tcst2025-vocbf/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Dynamic Collision Avoidance Using Velocity Obstacle-Based Control Barrier Functions
-                                </strong><br>
-                                Jihao Huang, <strong>Jun Zeng</strong>, Xuemin Chi, Koushil Sreenath, Zhitao Liu, Hongye
-                                Su<br>
-                                IEEE Transactions on Control Systems Technology (T-CST), 2025<br>
-                                <a target="_blank" href="https://doi.org/10.1109/TCST.2025.3546076">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2503.00606">ArXiv</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/vo-polytope">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/cdc2023-i2lqr/cover.png" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    i2LQR: Iterative LQR for Iterative Tasks in Dynamic Environments
-                                </strong><br>
-                                Yifan Zeng*, Suiyi He*, Han Hoang Nguyen, Yihan Li, Zhongyu Li, Koushil Sreenath,
-                                <strong>Jun Zeng</strong><br>
-                                IEEE Conference on Decision and Control (CDC), 2023<br>
-                                <a target="_blank" href="https://doi.org/10.1109/CDC49753.2023.10383960">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2302.14246">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/iecon2023-unicycle/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Obstacle Avoidance for Unicycle-Modelled Mobile Robots with Time-Varying Control
-                                    Barrier Functions
-                                </strong><br>
-                                Jihao Huang, Zhitao Liu, <strong>Jun Zeng</strong>, Xuemin Chi, Hongye Su<br>
-                                Annual Conference of the IEEE Industrial Electronics Society (IECON), 2023<br>
-                                <a target="_blank" href="https://doi.org/10.1109/IECON51785.2023.10312269">Publisher</a>
-                                /
-                                <a target="_blank" href="https://arxiv.org/abs/2307.08227">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/iros2023-narrow/cover.jpg" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Walking in Narrow Spaces: Safety-Critical Locomotion Control for Quadrupedal Robots
-                                    with Duality-based Optimization
-                                </strong><br>
-                                Qiayuan Liao, Zhongyu Li, Akshay Thirugnanam, <strong>Jun Zeng</strong>, Koushil
-                                Sreenath<br>
-                                IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023<br>
-                                <a target="_blank" href="https://doi.org/10.1109/IROS55552.2023.10341896">Publisher</a>
-                                /
-                                <a target="_blank" href="https://arxiv.org/abs/2212.14199">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/p1gSQjwXm1Q">YouTube</a> /
-                                <a target="_blank"
-                                    href="https://github.com/HybridRobotics/quadruped_nmpc_dcbf_duality">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ijrr-cassie-navigation/cassie-navigation.gif"
-                                width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Autonomous Navigation of Underactuated Bipedal Robots in Height-Constrained
-                                    Environments
-                                </strong><br>
-                                Zhongyu Li, <strong>Jun Zeng</strong>, Shuxiao Chen, Koushil Sreenath<br>
-                                International Journal of Robotics Research (IJRR), 2023 <br>
-                                <a target="_blank" href="https://doi.org/10.1177/02783649231187670">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2109.05714">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/Da0tebC3WuE">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2023-dhocbf/linearization-dhocbf.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Iterative Convex Optimization for Model Predictive Control with Discrete-Time
-                                    High-Order Control Barrier Functions
-                                </strong><br>
-                                Shuo Liu*, <strong>Jun Zeng*</strong>, Koushil Sreenath, Calin A. Belta<br>
-                                IEEE American Control Conference (ACC), 2023<br>
-                                <a target="_blank" href="https://doi.org/10.23919/ACC55779.2023.10156532">Publisher</a>
-                                /
-                                <a target="_blank" href="https://arxiv.org/abs/2210.04361">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ral2023-vo/cover.png" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Velocity Obstacle for Polytopic Collision Avoidance for Distributed Multi-Robot
-                                    Systems
-                                </strong><br>
-                                Jihao Huang*, <strong>Jun Zeng*</strong>, Xuemin Chi, Koushil Sreenath, Zhitao Liu,
-                                Hongye
-                                Su<br>
-                                IEEE Robotics and Automation Letters (RA-L), 2023<br>
-                                <a target="_blank" href="https://doi.org/10.1109/LRA.2023.3269295">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2304.07954">ArXiv</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="arma" class="pull-left">
-                            <img class="media-object" src="assets/iros2022-rma/arma.gif" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Adapting Rapid Motor Adaptation for Bipedal Robots
-                                </strong><br>
-                                Ashish Kumar, Zhongyu Li, <strong>Jun Zeng</strong>, Deepak Pathak, Koushil Sreenath,
-                                Jitendra Malik<br>
-                                IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.1109/IROS47612.2022.9981091">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2205.15299">ArXiv</a> /
-                                <a target="_blank" href="https://www.youtube.com/watch?v=HSdFHX0qQqg">YouTube</a> /
-                                <a target="_blank" href="https://ashish-kmr.github.io/a-rma/">Webpage</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ral2022-collaborative/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Collaborative Navigation and Manipulation of a Cable-towed Load by Multiple
-                                    Quadrupedal Robots
-                                </strong><br>
-                                Chenyu Yang, Guo Ning Sue, Zhongyu Li, Lizhi Yang, Haotian Shen, Yufeng Chi, Akshara
-                                Rai, <strong>Jun Zeng</strong>, Koushil Sreenath<br>
-                                IEEE Robotics and Automation Letters (RA-L), 2022<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9830869">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2206.14424">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/mBkz_vGOSBs">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/rss2022-rl-syid/rl-sysid.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Bridging Model-based Safety and Model-free Reinforcement Learning through System
-                                    Identification of Low Dimensional Linear Models
-                                </strong><br>
-                                Zhongyu Li, <strong>Jun Zeng</strong>, Akshay Thirugnanam, Koushil Sreenath<br>
-                                Robotics: Science and Systems (RSS), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.15607/RSS.2022.XVIII.033">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2205.05787">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/C-eu-DM2Vd0">YouTube</a> /
-                                <a target="_blank"
-                                    href="https://sites.google.com/berkeley.edu/rl-sysid-rss2022">Webpage</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/tmech-flight/cover.png" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Model-Free Online Motion Adaptation for Energy-Efficient Flight of Multicopters
-                                </strong><br>
-                                Xiangyu Wu, <strong>Jun Zeng</strong>, Andrea Tagliabue, Mark W. Mueller<br>
-                                IEEE Access, 2022<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9795278">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2108.03807">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/aLds8LVfogk">YouTube</a> /
-                                <a target="_blank"
-                                    href="https://github.com/muellerlab/adaptive-multivariable-extremum-seeking-controller">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2022-duality/sample-animation-ct.gif" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Duality-based Convex Optimization for Real-time Obstacle Avoidance between Polytopes
-                                    with Control Barrier Functions
-                                </strong><br>
-                                Akshay Thirugnanam, <strong>Jun Zeng</strong>, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.23919/ACC53348.2022.9867246">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2107.08360">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/2hKlihdERog">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/icra2022-duality/sample-animation-dt.gif"
-                                width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Safety-Critical Control and Planning for Obstacle Avoidance between Polytopes with
-                                    Control Barrier Functions
-                                </strong><br>
-                                Akshay Thirugnanam*, <strong>Jun Zeng*</strong>, Koushil Sreenath<br>
-                                IEEE International Conference on Robotics and Automation (ICRA), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.1109/ICRA46639.2022.9812334">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2109.12313">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/2hKlihdERog">YouTube</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/cbf">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/icra2022-racing/l-shape.gif" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Autonomous Racing with Multiple Vehicles using a Parallelized Optimization with
-                                    Safety Guarantee using Control Barrier Functions
-                                </strong><br>
-                                Suiyi He*, <strong>Jun Zeng*</strong>, Koushil Sreenath<br>
-                                IEEE International Conference on Robotics and Automation (ICRA), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.1109/ICRA46639.2022.9811969">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2112.06435">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/1zTXfzdQ8w4">YouTube</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/car-racing">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/icra2022-bo/real-world-training.gif" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Bayesian Optimization Meets Hybrid Zero Dynamics:
-                                    Safe Parameter Learning for Bipedal Locomotion Control
-                                </strong><br>
-                                Lizhi Yang*, Zhongyu Li*, <strong>Jun Zeng</strong>, Koushil Sreenath<br>
-                                IEEE International Conference on Robotics and Automation (ICRA), 2022<br>
-                                <a target="_blank" href="https://doi.org/10.1109/ICRA46639.2022.9812154">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2203.02570">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/WxkdJdMRdfM">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/cdc2021-nmpc-dcbf-feasibility/feasibility.png"
-                                width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Enhancing Feasibility and Safety of Nonlinear Model Predictive Control with
-                                    Discrete-Time Control Barrier Functions
-                                </strong><br>
-                                <strong>Jun Zeng*</strong>, Zhongyu Li*, Koushil Sreenath<br>
-                                IEEE Conference on Decision and Control (CDC), 2021<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9683174">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2105.10596">ArXiv</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/CLF-CBF-NMPC">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/case2021-hoop/hoop.gif" width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Autonomous Navigation for Quadrupedal Robots with Optimized Jumping through
-                                    Constrained Obstacles
-                                </strong><br>
-                                Scott Gilroy*, Derek Lau*, Lizhi Yang*, Ed Izaguirre, Kristen Biermayer, Anxing Xiao,
-                                Mengti Sun, Ayush Agrawal, <strong>Jun Zeng</strong>, Zhongyu Li, Koushil Sreenath<br>
-                                IEEE International Conference on Automation Science and Engineering (CASE), 2021<br>
-                                <a target="_blank" href="https://doi.org/10.1109/CASE49439.2021.9551524">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2107.00773">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/5pzJ8U7YyGc">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/icra2021-guide-dog/guide-jun.gif" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    A Quadrupedal Robot Leading Human with Leash-Guided Hybrid Physical Interaction
-                                </strong><br>
-                                Anxing Xiao*, Wenzhe Tong*, Lizhi Yang*, <strong>Jun Zeng</strong>, Zhongyu Li, Koushil
-                                Sreenath<br>
-                                IEEE International Conference on Robotics and Automation (ICRA), 2021<br>
-                                <font color="red"><strong>Best Paper Award in Service Robotics — Finalist</strong>
-                                </font>
-                                <br>
-                                <a target="_blank" href="https://doi.org/10.1109/ICRA48506.2021.9561786">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2103.14300">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/FySXRzmji8Y">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2021-lane-change/lane-change.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Rule-Based Safety-Critical Control Design using Control Barrier Functions with
-                                    Application to Autonomous Lane Change
-                                </strong><br>
-                                Suiyi He, <strong>Jun Zeng</strong>, Bike Zhang, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2021<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9482848">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2103.12382">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/icmy9u2a4z4">YouTube</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/Lane-Change-CBF">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2021-feasibility/reachability.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Safety-Critical Control with Optimal-decay Control Barrier Function with Guaranteed
-                                    Point-wise Feasibility
-                                </strong><br>
-                                <strong>Jun Zeng</strong>, Bike Zhang, Zhongyu Li, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2021<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9482626">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2103.12375">ArXiv</a> /
-                                <a target="_blank"
-                                    href="https://github.com/HybridRobotics/CBF-Pointwise-Feasibility">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2021-mpc-cbf/avoidance.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function
-                                </strong><br>
-                                <strong>Jun Zeng*</strong>, Bike Zhang*, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2021 <br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9483029">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2007.11718">ArXiv</a> /
-                                <a target="_blank" href="https://github.com/HybridRobotics/MPC-CBF">GitHub</a> /
-                                <a target="_blank" href="https://youtu.be/IfNgogcLSjE">NorCal Control Workshop</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/iros2020-ball-manipulation/local-spin.gif"
-                                width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Dynamic Legged Manipulation of a Ball Through Multi-Contact Optimization
-                                </strong><br>
-                                Chenyu Yang, Bike Zhang, <strong>Jun Zeng</strong>, Ayush Agrawal, Koushil Sreenath<br>
-                                IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9341218">Publisher</a> /
-                                <a target="_blank" href="https://arxiv.org/abs/2008.00191">ArXiv</a> /
-                                <a target="_blank" href="https://youtu.be/rIVkfudC4_8">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media pub-selected">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/ral2020-ppql/waypoint.gif" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Differential Flatness based Path Planning with Direct Collocation on Hybrid Modes
-                                    for a Quadrotor with a Cable-Suspended Payload
-                                </strong><br>
-                                <strong>Jun Zeng</strong>, Prasanth Kotaru, Mark W. Mueller, Koushil Sreenath<br>
-                                IEEE Robotics and Automation Letters (RA-L), 2020<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/8988166">Publisher</a> /
-                                <a target="_blank" href="https://youtu.be/e09RZOx_nZk">YouTube</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2019-quad-pulley-load/cover.png" width="200px"
-                                height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Geometric Control and Differential Flatness of a Quadrotor UAV with Load Suspended
-                                    from a Pulley
-                                </strong><br>
-                                <strong>Jun Zeng</strong>, Prasanth Kotaru, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2019<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/8815173">Publisher</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="media">
-                        <a name="fsaf" class="pull-left">
-                            <img class="media-object" src="assets/acc2019-quad-offset-load/performance.png"
-                                width="200px" height="200px">
-                        </a>
-                        <div class="media-body">
-                            <p class="media-heading">
-                                <strong>
-                                    Geometric Control of a Quadrotor with a Load Suspended from an Offset
-                                </strong><br>
-                                <strong>Jun Zeng</strong>, Koushil Sreenath<br>
-                                IEEE American Control Conference (ACC), 2019<br>
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/8814939">Publisher</a>
-                            </p>
-                        </div>
-                    </div>
-                </div> <!-- end of pub-list -->
-
-                <!--
-             *** Awards & Honors ***
-            -->
-                <h3>
-                    <a name="awards"></a> Awards &amp; Honors
-                </h3>
-
-                <ul>
-                    <li>Chin Leung Shui Chun Fellowship, UC Berkeley, 2021</li>
-                    <li>Graduate Division Block Fellowship, UC Berkeley, 2020-2021</li>
-                    <li>Mechanical Engineering Department Award, UC Berkeley, 2020</li>
-                    <li>X Fondation Fellowship, Ecole Polytechnique, 2015-2017</li>
-                    <li>Ardian Excellence Scholarship, SJTU, 2014</li>
-                    <li>University Excellence Scholarship, SJTU, 2012-2014</li>
+    <!-- ===================================================== navigation === -->
+    <nav class="navbar navbar-expand-lg fixed-top site-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Jun Zeng</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Misc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./cv/main.pdf" target="_blank" rel="noopener">CV</a></li>
                 </ul>
-
-                <!--
-             *** Professional Activities ***
-            -->
-                <h3>
-                    <a name="professional-activities"></a> Professional Activities
-                </h3>
-
-                <h4>
-                    <a name="teaching"></a> Teaching
-                </h4>
-
-                <ul>
-                    <li>EECS106B/206B - Robotic Manipulation and Interaction (Spring 2020)</li>
-                    <li>EECS106A/206A - Introduction to Robotics (Fall 2019)</li>
-                </ul>
-
-                <h4>
-                    <a name="peer-reviews"></a> Peer Reviews
-                </h4>
-
-                <strong>Journal Reviewer</strong>
-                <ul>
-                    <li>ASME Journal of Dynamic Systems, Measurement, and Control, 2021 - 2025</li>
-                    <li>Automatica, 2022 - 2026</li>
-                    <li>IEEE Access, 2022 - 2025</li>
-                    <li>IEEE Control Systems Letters (L-CSS), 2023 - 2026</li>
-                    <li>IEEE Open Journal of Control Systems (OJ-CSYS), 2023 - 2025</li>
-                    <li>IEEE Robotics and Automation Letters (RA-L), 2020 - 2026</li>
-                    <li>IEEE Transactions on Automatic Control (TAC), 2021 - 2026</li>
-                    <li>IEEE Transactions on Control of Network Systems (TCNS), 2021 - 2025</li>
-                    <li>IEEE Transactions on Control Systems Technology (T-CST), 2021 - 2026</li>
-                    <li>IEEE Transactions on Industrial Electronics (TIE), 2024 - 2026</li>
-                    <li>IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2026</li>
-                    <li>IEEE Transactions on Robotics (T-RO), 2023 - 2026</li>
-                    <li>IEEE Transactions on Systems, Man, and Cybernetics (TSMC), 2026</li>
-                    <li>IEEE/ASME Transactions on Mechatronics (T-Mech), 2022 - 2026</li>
-                    <li>International Journal of Robotics Research (IJRR), 2023 - 2025</li>
-                    <li>International Journal of Robust and Nonlinear Control (RNC), 2023 - 2025</li>
-                </ul>
-
-                <br>
-                <strong>Conference Reviewer</strong>
-                <ul>
-                    <li>AAAI Conference on Artificial Intelligence (AAAI), 2022 - 2024</li>
-                    <li>American Control Conference (ACC), 2023 - 2026</li>
-                    <li>Annual Conference of the IEEE Industrial Electronics Society (IECON), 2023 - 2025</li>
-                    <li>European Control Conference (ECC), 2023 - 2025</li>
-                    <li>IEEE Conference on Control Technology and Applications (CCTA), 2024 - 2025</li>
-                    <li>IEEE Conference on Decision and Control (CDC), 2022 - 2026</li>
-                    <li>IEEE International Conference on Robotics and Automation (ICRA), 2020 - 2026</li>
-                    <li>IEEE International Conference on Unmanned Aircraft Systems (ICUAS), 2020 - 2021</li>
-                    <li>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021 - 2025</li>
-                    <li>Learning for Dynamics &amp; Control Conference (L4DC), 2023 - 2026</li>
-                </ul>
-
-                <br>
-                <script type='text/javascript' id='clustrmaps'
-                    src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=dhr8zhvzmGGvxE8ckHeMd83lx96o9hy_ErkelZMha9Q'></script>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <script type="text/javascript">
-        function showPubs(mode) {
-            document.getElementById('pub-list').classList.toggle('show-selected', mode === 'selected');
-            document.getElementById('btn-pub-full').classList.toggle('active', mode === 'full');
-            document.getElementById('btn-pub-selected').classList.toggle('active', mode === 'selected');
-        }
+    <!-- =========================================================== hero === -->
+    <!-- Drop a landscape photo at assets/profile/hero.jpg (>= 1920x1080) and it
+         replaces the gradient automatically — see assets/profile/README.md. -->
+    <section id="home" class="hero" data-bg-src="assets/profile/hero.jpg">
+        <div class="container">
+            <h1>Hi! I&rsquo;m Jun Zeng.</h1>
+            <p class="hero-sub">
+                CTO at Cyan Robotics. Working on
+                <span class="rotator">
+                    <b>robotics.</b>
+                    <b>optimal control.</b>
+                    <b>embodied AI.</b>
+                </span>
+            </p>
+        </div>
+        <a class="hero-scroll" href="#about" aria-label="Scroll to about section">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ========================================================== about === -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 col-md-6">
+                    <!-- Drop a portrait at assets/profile/portrait.jpg (>= 800x1000). -->
+                    <div class="portrait" data-img-src="assets/profile/portrait.jpg">
+                        <i class="fa-solid fa-camera portrait-placeholder" aria-hidden="true"></i>
+                        <img alt="Jun Zeng">
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6">
+                    <div class="heading">
+                        <h2>About Me</h2>
+                    </div>
+                    <p class="about-subtitle">Roboticist &amp; AI/ML Scientist</p>
+
+                    <p>
+                        I&rsquo;m Jun Zeng (曾俊). My work spans robotics, artificial intelligence and autonomous
+                        systems — optimal control, nonlinear optimization, motion planning, trajectory generation,
+                        reinforcement learning and machine learning. I build algorithms at the intersection of
+                        decision-making, learning and physical systems, so that robots and autonomous vehicles can
+                        operate safely and intelligently in complex real-world environments.
+                    </p>
+
+                    <p>
+                        I&rsquo;m currently the Chief Technology Officer of Cyan Robotics in Shanghai, leading
+                        <em>Amoo</em>, an embodied companion robot, from research prototype to consumer product. I
+                        received my Ph.D. from the
+                        <a target="_blank" rel="noopener" href="https://hybrid-robotics.berkeley.edu/">Hybrid Robotics
+                            Group</a>
+                        at UC Berkeley under
+                        <a target="_blank" rel="noopener"
+                            href="https://me.berkeley.edu/people/koushil-sreenath/">Prof. Koushil Sreenath</a>,
+                        where I worked on model-based optimization, control and learning for aerial and legged robots.
+                    </p>
+
+                    <p>
+                        I&rsquo;m always glad to have technical discussions and to build new connections — feel free to
+                        reach me through the links below.
+                    </p>
+
+                    <div class="about-actions">
+                        <a class="main-btn" href="./cv/main.pdf" target="_blank" rel="noopener">Resume / CV</a>
+
+                        <div class="social-links">
+                            <a href="mailto:zengjunsjtu@berkeley.edu" title="Email" aria-label="Email"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                            <a target="_blank" rel="noopener"
+                                href="https://scholar.google.com/citations?user=xBOE358AAAAJ&hl=en"
+                                title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                            <a target="_blank" rel="noopener" href="https://github.com/junzengx14" title="GitHub"
+                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/junzengx14/"
+                                title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank" rel="noopener" href="https://twitter.com/junzengx14" title="Twitter"
+                                aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================== experience === -->
+    <!-- Logos are optional: drop PNGs at the data-img-src paths below and they
+         replace the lettermark placeholders automatically. -->
+    <section id="experience" class="section bg-gray">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Experience</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="cv-card">
+                        <div class="cv-logo" data-img-src="assets/experience/cyan.png">
+                            <span class="cv-lettermark">C</span><img alt="Cyan Robotics logo">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-head">
+                                <span class="cv-org">Cyan Robotics</span>
+                                <span class="cv-dates">Oct 2025 &ndash; Present</span>
+                            </div>
+                            <div class="cv-role">Chief Technology Officer &mdash; Shanghai, China</div>
+                            <p class="cv-detail">
+                                Own the technology strategy, roadmap and system architecture for <em>Amoo</em>, an
+                                embodied companion robot. Lead a multidisciplinary team across the full robotics and AI
+                                stack — hardware-software integration, robot control and autonomous behaviors through
+                                foundation models and LLM-based intelligence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cv-card">
+                        <div class="cv-logo" data-img-src="assets/experience/cruise.png">
+                            <span class="cv-lettermark">C</span><img alt="Cruise logo">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-head">
+                                <span class="cv-org"><a target="_blank" rel="noopener" href="https://www.getcruise.com/">Cruise LLC</a></span>
+                                <span class="cv-dates">Jul 2022 &ndash; Oct 2025</span>
+                            </div>
+                            <div class="cv-role">Senior AI/ML Scientist &mdash; San Francisco, CA</div>
+                            <p class="cv-detail">
+                                Trajectory generation and large driving models for autonomous vehicles: unified reactive
+                                motion planning and control, non-convex trajectory generation solvers, and
+                                constraint enforcement inside large behavior models across pretraining, post-training
+                                and deployment.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================== education === -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Education</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="cv-card">
+                        <div class="cv-logo has-logo">
+                            <img src="assets/education/berkeley.png" alt="UC Berkeley logo">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-head">
+                                <span class="cv-org">University of California, Berkeley</span>
+                                <span class="cv-dates">Aug 2017 &ndash; May 2022</span>
+                            </div>
+                            <div class="cv-role">Ph.D. in Mechanical Engineering</div>
+                            <p class="cv-detail">
+                                Advisor: Prof. Koushil Sreenath<br>
+                                Field: Control, Robotics, Machine Learning
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cv-card">
+                        <div class="cv-logo has-logo">
+                            <img src="assets/education/polytechnique.png" alt="Ecole Polytechnique logo">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-head">
+                                <span class="cv-org"><a target="_blank" rel="noopener" href="https://www.polytechnique.edu/en">Ecole Polytechnique</a></span>
+                                <span class="cv-dates">Mar 2015 &ndash; Aug 2017</span>
+                            </div>
+                            <div class="cv-role">Diplôme d&rsquo;ingénieur in Applied Mathematics and Mechanics</div>
+                        </div>
+                    </div>
+
+                    <div class="cv-card">
+                        <div class="cv-logo has-logo">
+                            <img src="assets/education/sjtu.png" alt="Shanghai Jiao Tong University logo">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-head">
+                                <span class="cv-org"><a target="_blank" rel="noopener" href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a></span>
+                                <span class="cv-dates">Sep 2012 &ndash; May 2016</span>
+                            </div>
+                            <div class="cv-role">Bachelor of Science and Engineering in Automation</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================== publications === -->
+    <section id="publications" class="section bg-gray">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Selected Publications</h2>
+            </div>
+
+            <p class="text-center"><small>* indicates equal contribution.</small></p>
+
+            <div id="pub-list"></div>
+
+            <div class="text-center pt-4">
+                <a class="main-btn" href="./publications.html">View full publication list</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= projects === -->
+    <!--
+      TODO: replace the placeholder tiles below with real entries.
+
+      To add one, copy a block and set:
+        data-category  robots | outdoors | life   (must match a filter-bar entry)
+        <img>          optional — drop it inside .item-content; without an <img>
+                       the CSS gradient shows instead, so nothing looks broken
+        h6 / p         title and caption shown on hover
+
+      To add a category, add <li data-filter="yourcat">Your Cat</li> to the
+      filter bar and use data-category="yourcat" on the tiles.
+    -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Misc</h2>
+            </div>
+
+            <ul class="filter-bar">
+                <li data-filter="all" class="is-active">All</li>
+                <li data-filter="robots">Robots</li>
+                <li data-filter="outdoors">Outdoors</li>
+                <li data-filter="life">Life</li>
+            </ul>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 project-item" data-category="robots">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; robotics project</h6>
+                            <p>Swap in a photo and caption for a robot you built or worked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item" data-category="robots">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; robotics project</h6>
+                            <p>Swap in a photo and caption for a robot you built or worked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item" data-category="outdoors">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; skiing / snowboarding</h6>
+                            <p>Swap in a photo and caption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item" data-category="outdoors">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; climbing / paragliding</h6>
+                            <p>Swap in a photo and caption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item" data-category="life">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; photography</h6>
+                            <p>Swap in a photo and caption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 project-item" data-category="life">
+                    <div class="item-content">
+                        <div class="item-overlay">
+                            <h6>Placeholder &mdash; teams &amp; travel</h6>
+                            <p>Swap in a photo and caption.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= awards and service === -->
+    <section id="awards" class="section bg-gray">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Awards &amp; Service</h2>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="subheading">Awards &amp; Honors</h3>
+                    <ul class="plain-list">
+                        <li>Chin Leung Shui Chun Fellowship, UC Berkeley, 2021</li>
+                        <li>Graduate Division Block Fellowship, UC Berkeley, 2020-2021</li>
+                        <li>Mechanical Engineering Department Award, UC Berkeley, 2020</li>
+                        <li>X Fondation Fellowship, Ecole Polytechnique, 2015-2017</li>
+                        <li>Ardian Excellence Scholarship, SJTU, 2014</li>
+                        <li>University Excellence Scholarship, SJTU, 2012-2014</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- id kept from the old page so existing deep links still land here -->
+                    <h3 class="subheading" id="professional-activities">Teaching</h3>
+                    <ul class="plain-list" id="teaching-list"></ul>
+
+                    <h3 class="subheading">Peer Review</h3>
+                    <p class="service-summary">
+                        Reviewer for <strong><span id="journal-count">16</span> journals</strong> and
+                        <strong><span id="conference-count">10</span> conferences</strong> in robotics and control,
+                        including T-RO, TAC, RA-L, IJRR, ICRA, IROS and CDC.
+                        &mdash; <a href="./service.html">Full list &rarr;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================== blog === -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Blog</h2>
+            </div>
+
+            <!--
+              No posts exist yet (there is no _posts/ directory), so the empty
+              state below is what renders. Once you add posts, delete the
+              .blog-empty block and uncomment the card row underneath.
+            -->
+            <div class="blog-empty">
+                <p>No posts yet — writing about robotics, control and embodied AI is on the list.</p>
+                <a class="main-btn" href="./blog.html">Visit blog</a>
+            </div>
+
+            <!--
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img"><img src="assets/blog/post-1.jpg" alt=""></div>
+                        <div class="blog-content">
+                            <h3><a href="#">Post title</a></h3>
+                            <p>One-sentence teaser.</p>
+                            <div class="blog-meta">1 Jan 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4">
+                <a class="main-btn" href="./blog.html">View more</a>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- ========================================================= footer === -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">Jun Zeng &copy; <span id="footer-year">2026</span></p>
+            <div id="clustrmaps-container" class="mt-3">
+                <script type="text/javascript" id="clustrmaps"
+                    src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=dhr8zhvzmGGvxE8ckHeMd83lx96o9hy_ErkelZMha9Q"></script>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/publications.js"></script>
+    <script src="./js/publications-render.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/site.js"></script>
+    <script>
+        renderPublications({ mountId: "pub-list", onlySelected: true });
     </script>
 </body>
 

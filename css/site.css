@@ -1,0 +1,537 @@
+/* ==========================================================================
+   junzengx14.github.io — site styles
+
+   Layered on top of Bootstrap 5 (grid + a few utilities only). No jQuery.
+   NOTE: css/main.css is a separate stylesheet for the Jekyll blog layout
+   (_layouts/*.html, blog.html). Don't merge the two.
+   ========================================================================== */
+
+:root {
+  --ink: #222;
+  --body: #484848;
+  --muted: #777;
+  --gray-bg: #f2f2f2;
+  --line: #e6e6e6;
+  --accent: #2a7ae2;
+  --nav-h: 70px;
+}
+
+/* --------------------------------------------------------------- base --- */
+
+html {
+  scroll-behavior: smooth;
+  /* keep anchored sections clear of the fixed navbar */
+  scroll-padding-top: var(--nav-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--ink); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--ink); text-decoration: underline; }
+
+/* ----------------------------------------------------------- sections --- */
+
+.section { padding: 100px 0; }
+.bg-gray { background-color: var(--gray-bg); }
+
+.heading { margin-bottom: 50px; }
+
+.heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.heading h6 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.main-btn {
+  display: inline-block;
+  background-color: var(--ink);
+  border: 2px solid var(--ink);
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------- navbar --- */
+
+.site-nav {
+  transition: background-color 0.3s, box-shadow 0.3s, padding 0.3s;
+  background-color: transparent;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.site-nav.is-scrolled,
+.site-nav.is-solid {
+  background-color: var(--ink);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.site-nav .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 8px 14px;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* the collapsed mobile menu needs its own backdrop over a transparent navbar */
+@media (max-width: 991.98px) {
+  .site-nav .navbar-collapse.show,
+  .site-nav .navbar-collapse.collapsing {
+    background-color: var(--ink);
+    margin: 10px -12px -14px;
+    padding: 10px 12px;
+  }
+}
+
+/* --------------------------------------------------------------- hero --- */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  /* fallback shown until js/site.js confirms assets/profile/hero.jpg loads */
+  background: linear-gradient(135deg, #1b2430 0%, #2c3e50 55%, #35506b 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.has-photo {
+  background-image: url("../assets/profile/hero.jpg");
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero .container { position: relative; z-index: 2; }
+
+.hero h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: clamp(38px, 8vw, 88px);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hero .hero-sub {
+  font-size: clamp(18px, 2.6vw, 24px);
+  color: #eee;
+  margin-top: 30px;
+}
+
+.hero .hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 26px;
+  opacity: 0.8;
+  animation: hero-bob 2s ease-in-out infinite;
+}
+
+.hero .hero-scroll:hover { opacity: 1; text-decoration: none; }
+
+@keyframes hero-bob {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 10px); }
+}
+
+/* Rotating tagline — replaces Boyuan's animated.headline.js with pure CSS.
+   Three phrases, 9s cycle, each visible for a third of it. */
+.rotator {
+  display: inline-grid;
+  vertical-align: bottom;
+}
+
+.rotator b {
+  grid-area: 1 / 1;
+  font-weight: 700;
+  opacity: 0;
+  white-space: nowrap;
+  animation: rotate-phrase 9s linear infinite;
+}
+
+.rotator b:nth-child(2) { animation-delay: 3s; }
+.rotator b:nth-child(3) { animation-delay: 6s; }
+
+@keyframes rotate-phrase {
+  0%    { opacity: 0; transform: translateY(8px); }
+  4%    { opacity: 1; transform: translateY(0); }
+  30%   { opacity: 1; transform: translateY(0); }
+  34%   { opacity: 0; transform: translateY(-8px); }
+  100%  { opacity: 0; transform: translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-scroll { animation: none; }
+  .rotator b { animation: none; opacity: 0; }
+  .rotator b:first-child { opacity: 1; }
+}
+
+/* -------------------------------------------------------------- about --- */
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  /* placeholder shown until assets/profile/portrait.jpg exists */
+  background: repeating-linear-gradient(45deg, #e9e9e9, #e9e9e9 12px, #e2e2e2 12px, #e2e2e2 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+.portrait .portrait-placeholder { font-size: 44px; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; display: none; }
+.portrait.has-photo img { display: block; }
+.portrait.has-photo .portrait-placeholder { display: none; }
+
+.about-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  font-size: 34px;
+  margin-right: 20px;
+  color: #555;
+}
+
+.social-links a:last-child { margin-right: 0; }
+.social-links a:hover { color: var(--accent); text-decoration: none; }
+/* the Google Scholar glyph renders larger than the rest — shrink it to match */
+.social-links .ai { font-size: 29px; }
+
+/* ------------------------------------------- experience / education --- */
+
+.cv-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-card:last-child { border-bottom: 0; }
+
+.cv-logo {
+  flex: 0 0 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cv-logo img { max-width: 100%; max-height: 100%; object-fit: contain; display: none; }
+.cv-logo.has-logo img { display: block; }
+.cv-logo.has-logo .cv-lettermark { display: none; }
+
+/* fallback while assets/experience/*.png don't exist */
+.cv-lettermark {
+  font-size: 34px;
+  font-weight: 800;
+  color: #9aa5b1;
+  letter-spacing: -0.02em;
+}
+
+.cv-body { flex: 1 1 auto; min-width: 0; }
+.cv-org { font-weight: 700; color: var(--ink); }
+
+/* org names link out, but should read as headings rather than body links */
+.cv-org a { color: inherit; }
+.cv-org a:hover { color: var(--accent); text-decoration: none; }
+
+.cv-dates { color: var(--muted); white-space: nowrap; }
+.cv-role { font-weight: 600; }
+.cv-detail { color: var(--body); margin: 0; }
+
+.cv-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------- publications --- */
+
+.pub-row { margin-bottom: 45px; }
+.pub-row:last-child { margin-bottom: 0; }
+
+/* Cover images range from 0.75:1 to 4.3:1, so `contain` on a fixed 16:9 box —
+   `cover` would crop the wide ones into unreadable strips. */
+.paper-thumbnail {
+  aspect-ratio: 16 / 9;
+  background-color: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.paper-thumbnail a,
+.paper-thumbnail span { display: block; width: 100%; height: 100%; }
+.paper-thumbnail img { width: 100%; height: 100%; object-fit: contain; }
+
+.pub-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.35;
+  display: inline-block;
+}
+
+.pub-title:hover { color: var(--accent); text-decoration: none; }
+
+.pub-authors { margin: 8px 0 0; }
+.pub-venue { margin: 2px 0 0; }
+.pub-note { margin: 4px 0 0; }
+.pub-award { color: #c0392b; }
+.pub-links { margin: 12px 0 0; font-size: 15px; }
+
+.pub-panel {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background-color: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.pub-panel pre { margin: 0; white-space: pre-wrap; font-size: 13px; }
+
+@media (max-width: 767.98px) {
+  .paper-thumbnail { margin-bottom: 16px; }
+}
+
+/* ----------------------------------------------------------- projects --- */
+
+.filter-bar {
+  list-style: none;
+  padding: 0;
+  margin: -30px 0 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-bar li {
+  cursor: pointer;
+  padding: 6px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-bar li:hover { color: var(--ink); border-color: #ccc; }
+
+.filter-bar li.is-active {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.project-item { margin-bottom: 30px; }
+.project-item[hidden] { display: none; }
+
+.item-content {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  /* placeholder tiles are a gradient, so an absent image never shows as broken */
+  background: linear-gradient(135deg, #cfd8dc 0%, #90a4ae 100%);
+}
+
+.item-content img { width: 100%; height: 100%; object-fit: cover; }
+
+.item-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.15) 55%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item-content:hover .item-overlay,
+.item-content:focus-within .item-overlay { opacity: 1; }
+
+.item-overlay h6 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0 0 6px;
+}
+
+.item-overlay p { margin: 0; font-size: 14px; color: #e4e4e4; }
+
+/* touch devices have no hover — show the caption permanently */
+@media (hover: none) {
+  .item-overlay { opacity: 1; }
+}
+
+/* ------------------------------------------------- awards and service --- */
+
+.plain-list { padding-left: 20px; margin: 0; }
+.plain-list li { margin-bottom: 6px; }
+
+.subheading {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin: 30px 0 12px;
+}
+
+.subheading:first-child { margin-top: 0; }
+
+.service-summary { margin-bottom: 0; }
+
+/* ---------------------------------------------------------- blog --- */
+
+.blog-empty {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.blog-empty p { color: var(--muted); margin-bottom: 24px; }
+
+.blog-item {
+  background-color: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.blog-item .blog-img { aspect-ratio: 16 / 9; background-color: #e9e9e9; }
+.blog-item .blog-img img { width: 100%; height: 100%; object-fit: cover; }
+.blog-item .blog-content { padding: 22px; }
+.blog-item .blog-content h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; }
+.blog-item .blog-meta { color: var(--muted); font-size: 14px; }
+
+/* ------------------------------------------------------------- pages --- */
+
+/* publications.html / service.html have no hero, so push content past the navbar */
+.page-body { padding-top: calc(var(--nav-h) + 60px); }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ------------------------------------------------------------ footer --- */
+
+.site-footer {
+  background-color: var(--ink);
+  color: #bbb;
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+.site-footer a { color: #ddd; }
+
+/* the clustrmaps widget renders a wide canvas — keep it from forcing h-scroll */
+.site-footer #clustrmaps-container { max-width: 100%; overflow: hidden; }
+
+/* ------------------------------------------------------- small screens --- */
+
+@media (max-width: 767.98px) {
+  .section { padding: 60px 0; }
+  .heading { margin-bottom: 30px; }
+  .heading h2 { font-size: 26px; }
+  .cv-card { flex-direction: row; gap: 14px; }
+  .cv-logo { flex-basis: 60px; width: 60px; height: 60px; }
+  .cv-lettermark { font-size: 24px; }
+  .cv-dates { white-space: normal; }
+  .social-links a { font-size: 28px; margin-right: 16px; }
+  .social-links .ai { font-size: 24px; }
+  .page-body { padding-top: calc(var(--nav-h) + 30px); }
+}

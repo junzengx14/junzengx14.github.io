@@ -129,26 +129,61 @@ maxcitenames=99
 The latest update of CV was done by Jun Zeng on \today.
 
 \section{Research Experience}
-I am interested in researching mathematical foundations and developing modern algorithms for the autonomous navigation of self-driving cars and dynamic robots, achieving low-latency, agile, and safe maneuvers with adaptation and robustness in complex environments. My research lies in the combination of control, optimization, motion planning, trajectory generation, reinforcement learning, and machine learning.
+I am interested in researching mathematical foundations and developing modern algorithms for
+    autonomous robots, achieving low-latency, agile, and safe maneuvers with adaptation and robustness
+    in complex environments. My research lies in the combination of control, optimization, motion
+    planning, trajectory generation, reinforcement learning, and machine learning.
 
 \section{Experience}
     \resumeSubHeadingListStart
         \resumeSubheading
-        {Senior AI/ML Scientist}{Jul 2022 -- Oct 2025}
+        {Chief Technology Officer}{Oct 2025 -- Present}
+        {Cyan Robotics}{Shanghai, China}
+        \resumeItemListStart
+            \resumeItem{Technical Leadership: Own technology strategy, system architecture, and
+                engineering roadmap. Grew engineering from $\sim$15 to $\sim$40 across mechanical and
+                electrical design, embedded systems, robot control and whole-body autonomy, and
+                multimodal end-to-end models, keeping hardware and software teams on a single roadmap.}
+            \resumeItem{Dino OS: Proposed and architected a modern embodied AI framework unifying
+                build, test, training, fine-tuning and deployment across heterogeneous compute platforms. 
+                One reproducible toolchain from experiment to on-robot deployment, and the
+                pivotal foundation for a fast-moving, complex embodied program; deployed on Amoo.}
+            \resumeItem{Hardware-Software Co-Design: Directed in-house IMU, stereo dToF module, and
+                modular robot joints. Vertical integration cut BOM cost and removed vendor lock-in,
+                while native driver integration enabled cross-sensor time synchronization and low-level
+                control unavailable off the shelf.}
+            \resumeItem{Product \& Business Impact: Took Amoo from research prototype to integrated
+                consumer product. Global debut at AWE 2026, followed by various venues such as BEYOND Expo 2026 in Macao,
+                WAIC in Shanghai, WRC in Beijing, IFA in Berlin; over
+                1000 letters of intent to purchase.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Senior AI/ML Scientist}{Jun 2022 -- Oct 2025}
         {Cruise LLC}{San Francisco, CA}
         \resumeItemListStart
-            \resumeItem{Trajectory Generation: Led the unification of reactive motion planning and control to enhance real-time adaptability and reduce system complexity. Led next generation of coupled non-convex trajectory generation solver with latest techniques of inner point methods. Designed and developed ML-based warm start calculation to accelerate solver runtime. Designed and integrated a ML-based dragging detector with collision imminence.}
-            \resumeItem{Large Driving Model \& AI Guardrails: Improved auto-regressive trajectory decoder, enhancing dynamic feasibility of the generated trajectories from the large ML model. Designed and contributed improvements to trajectory constraints enforcement in both training and inference time using various techniques such as flow matching, adapter layers fine-tuning, etc. Contributed to improve algorithm for training stability and robustness when transitioning between manual and autonomous driving, ensuring better policy learning and deployment. }
-            \resumeItem{Cross Team Technical Leadership: Worked as one of core ICs to reduce unnecessary braking and swerving to improve company-level top-down metrics; Collaborated closely with prediction and behavior planning teams to refine trajectory generation for complex driving scenarios, such as tight turns and cautious VRU interactions, contributing to more robust large planner model training and ML-based trajectory selection.}
-            \resumeItem{Full-Stack Robotics \& Large Behavior Models: Built full-stack robotics expertise across trajectory generation, motion planning, and control, together with end-to-end large behavior model experience spanning pretraining, post-training, evaluation harness, and deployment.}
+            \resumeItem{Large Behavior Models \& AI Guardrails: Worked as one of core ICs for end-to-end large
+                behavior model experience spanning pretraining, post-training, evaluation harness, and
+                deployment. Designed and improved auto-regressive trajectory decoder,
+                enhancing dynamic feasibility of the generated trajectories from the large ML model.
+                Designed and contributed improvements to trajectory constraints enforcement in both
+                training and inference time using various techniques such as flow matching, adapter
+                layers fine-tuning, etc. Contributed to improve algorithm for training stability and
+                robustness when transitioning between manual and autonomous driving, ensuring better
+                policy learning and deployment.}
+            \resumeItem{Trajectory Generation: Led the unification of reactive motion planning and
+                control to enhance real-time adaptability and reduce system complexity. Led next
+                generation of coupled non-convex trajectory generation solver with latest techniques of
+                inner point methods. Designed and developed ML-based warm start calculation to
+                accelerate solver runtime. Designed and integrated a ML-based dragging detector with
+                collision imminence.}
+            \resumeItem{Cross Team Technical Leadership: Worked as one of core ICs to reduce
+                unnecessary braking and swerving to improve company-level top-down metrics; Collaborated
+                closely with prediction and behavior planning teams to refine trajectory generation for
+                complex driving scenarios, such as tight turns and cautious VRU interactions,
+                contributing to more robust large planner model training and ML-based trajectory
+                selection.}
         \resumeItemListEnd
-        
-        % \resumeSubheading
-        % {Graduate Student Researcher}{Aug 2017 -- Jun 2022}
-        % {Hybrid Robotics Group, supervised by Koushil Sreenath}{Berkeley, CA}
-        % \resumeItemListStart
-        %     \resumeItem{Safety-Critical Control, Planning \& Navigation: Designed optimization techniques with formal safety guarantees with Control Barrier Functions. Applied these approaches to control, planning and trajectory generation problems, ensuring stability, feasibility, and constraint satisfaction for autonomous navigation problems with applications on various robotics platforms.}
-        % \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \section{Education}
@@ -194,7 +229,8 @@ I am interested in researching mathematical foundations and developing modern al
 \hspace*{0.5cm}
 \begin{tabularx}{0.95\textwidth}{X}
 \textbf{Car-Racing: A toolkit to validate algorithm for Autonomous Car Racing} \\
-- Versatile and Scalable simulation platform for autonomous car racing problems supporting dynamics, control, planning algorithm. \\
+- Versatile and Scalable simulation platform for autonomous car racing problems supporting dynamics,
+    control, planning algorithm. \\
 - Code repository: 
 \href{https://github.com/HybridRobotics/car-racing}{\textit{https://github.com/HybridRobotics/car-racing}}
 \end{tabularx}
@@ -203,7 +239,8 @@ I am interested in researching mathematical foundations and developing modern al
 \hspace*{0.5cm}
 \begin{tabularx}{0.95\textwidth}{X}
 \textbf{Python function for APIs for control barrier functions in the field of control, planning and navigation} \\
-- A python API library of multiple algorithm of control barrier functions for control and robotics applications. \\
+- A python API library of multiple algorithm of control barrier functions for control and robotics
+    applications. \\
 - Code repository: \href{https://github.com/HybridRobotics/cbf}{\textit{https://github.com/HybridRobotics/cbf}}
 \end{tabularx}
 \\ \hfill \break
@@ -211,7 +248,9 @@ I am interested in researching mathematical foundations and developing modern al
 \hspace*{0.5cm}
 \begin{tabularx}{0.95\textwidth}{X}
 \textbf{Code Collection of Discrete-time Control Barrier Functions (DCBF)} \\
-- A collection of multiple algorithm of discrete-time control barrier functions for control and robotics applications. This collection makes it simple to track latest work about control barrier functions. \\
+- A collection of multiple algorithm of discrete-time control barrier functions for control and
+    robotics applications. This collection makes it simple to track latest work about control barrier
+    functions. \\
 - Code repository: \href{https://github.com/HybridRobotics/NMPC-DCLF-DCBF}{\textit{https://github.com/HybridRobotics/NMPC-DCLF-DCBF}}
 \end{tabularx}
 

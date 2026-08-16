@@ -134,7 +134,7 @@
         "Zhongyu Li, <strong>Jun Zeng</strong>, Shuxiao Chen, Koushil Sreenath",
       venueHtml:
         "<strong>International Journal of Robotics Research (IJRR)</strong>, 2023",
-      thumbnail: { src: "assets/ijrr-cassie-navigation/cassie-navigation.gif", alt: "Autonomous Navigation of Underactuated Bipedal Robots in Height-Constrained Environments — thumbnail" },
+      thumbnail: { src: "assets/ijrr-cassie-navigation/cover.gif", alt: "Autonomous Navigation of Underactuated Bipedal Robots in Height-Constrained Environments — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1177/02783649231187670" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2109.05714" },
@@ -150,7 +150,7 @@
         "Shuo Liu*, <strong>Jun Zeng*</strong>, Koushil Sreenath, Calin A. Belta",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2023",
-      thumbnail: { src: "assets/acc2023-dhocbf/linearization-dhocbf.png", alt: "Iterative Convex Optimization for Model Predictive Control with Discrete-Time High-Order Control Barrier Functions — thumbnail" },
+      thumbnail: { src: "assets/acc2023-dhocbf/cover.png", alt: "Iterative Convex Optimization for Model Predictive Control with Discrete-Time High-Order Control Barrier Functions — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.23919/ACC55779.2023.10156532" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2210.04361" },
@@ -181,7 +181,7 @@
         "Ashish Kumar, Zhongyu Li, <strong>Jun Zeng</strong>, Deepak Pathak, Koushil Sreenath, Jitendra Malik",
       venueHtml:
         "<strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, 2022",
-      thumbnail: { src: "assets/iros2022-rma/arma.gif", alt: "Adapting Rapid Motor Adaptation for Bipedal Robots — thumbnail" },
+      thumbnail: { src: "assets/iros2022-rma/cover.gif", alt: "Adapting Rapid Motor Adaptation for Bipedal Robots — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/IROS47612.2022.9981091" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2205.15299" },
@@ -215,7 +215,7 @@
         "Zhongyu Li, <strong>Jun Zeng</strong>, Akshay Thirugnanam, Koushil Sreenath",
       venueHtml:
         "<strong>Robotics: Science and Systems (RSS)</strong>, 2022",
-      thumbnail: { src: "assets/rss2022-rl-syid/rl-sysid.png", alt: "Bridging Model-based Safety and Model-free Reinforcement Learning through System Identification of Low Dimensional Linear Models — thumbnail" },
+      thumbnail: { src: "assets/rss2022-rl-syid/cover.png", alt: "Bridging Model-based Safety and Model-free Reinforcement Learning through System Identification of Low Dimensional Linear Models — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.15607/RSS.2022.XVIII.033" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2205.05787" },
@@ -250,7 +250,7 @@
         "Akshay Thirugnanam, <strong>Jun Zeng</strong>, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2022",
-      thumbnail: { src: "assets/acc2022-duality/sample-animation-ct.gif", alt: "Duality-based Convex Optimization for Real-time Obstacle Avoidance between Polytopes with Control Barrier Functions — thumbnail" },
+      thumbnail: { src: "assets/acc2022-duality/cover.gif", alt: "Duality-based Convex Optimization for Real-time Obstacle Avoidance between Polytopes with Control Barrier Functions — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.23919/ACC53348.2022.9867246" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2107.08360" },
@@ -267,7 +267,7 @@
         "Akshay Thirugnanam*, <strong>Jun Zeng*</strong>, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2022",
-      thumbnail: { src: "assets/icra2022-duality/sample-animation-dt.gif", alt: "Safety-Critical Control and Planning for Obstacle Avoidance between Polytopes with Control Barrier Functions — thumbnail" },
+      thumbnail: { src: "assets/icra2022-duality/cover.gif", alt: "Safety-Critical Control and Planning for Obstacle Avoidance between Polytopes with Control Barrier Functions — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/ICRA46639.2022.9812334" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2109.12313" },
@@ -284,7 +284,7 @@
         "Suiyi He*, <strong>Jun Zeng*</strong>, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2022",
-      thumbnail: { src: "assets/icra2022-racing/l-shape.gif", alt: "Autonomous Racing with Multiple Vehicles using a Parallelized Optimization with Safety Guarantee using Control Barrier Functions — thumbnail" },
+      thumbnail: { src: "assets/icra2022-racing/cover.gif", alt: "Autonomous Racing with Multiple Vehicles using a Parallelized Optimization with Safety Guarantee using Control Barrier Functions — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/ICRA46639.2022.9811969" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2112.06435" },
@@ -301,7 +301,7 @@
         "Lizhi Yang*, Zhongyu Li*, <strong>Jun Zeng</strong>, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2022",
-      thumbnail: { src: "assets/icra2022-bo/real-world-training.gif", alt: "Bayesian Optimization Meets Hybrid Zero Dynamics: Safe Parameter Learning for Bipedal Locomotion Control — thumbnail" },
+      thumbnail: { src: "assets/icra2022-bo/cover.gif", alt: "Bayesian Optimization Meets Hybrid Zero Dynamics: Safe Parameter Learning for Bipedal Locomotion Control — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/ICRA46639.2022.9812154" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2203.02570" },
@@ -317,7 +317,7 @@
         "<strong>Jun Zeng*</strong>, Zhongyu Li*, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE Conference on Decision and Control (CDC)</strong>, 2021",
-      thumbnail: { src: "assets/cdc2021-nmpc-dcbf-feasibility/feasibility.png", alt: "Enhancing Feasibility and Safety of Nonlinear Model Predictive Control with Discrete-Time Control Barrier Functions — thumbnail" },
+      thumbnail: { src: "assets/cdc2021-nmpc-dcbf-feasibility/cover.png", alt: "Enhancing Feasibility and Safety of Nonlinear Model Predictive Control with Discrete-Time Control Barrier Functions — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/9683174" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2105.10596" },
@@ -333,7 +333,7 @@
         "Scott Gilroy*, Derek Lau*, Lizhi Yang*, Ed Izaguirre, Kristen Biermayer, Anxing Xiao, Mengti Sun, Ayush Agrawal, <strong>Jun Zeng</strong>, Zhongyu Li, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE International Conference on Automation Science and Engineering (CASE)</strong>, 2021",
-      thumbnail: { src: "assets/case2021-hoop/hoop.gif", alt: "Autonomous Navigation for Quadrupedal Robots with Optimized Jumping through Constrained Obstacles — thumbnail" },
+      thumbnail: { src: "assets/case2021-hoop/cover.gif", alt: "Autonomous Navigation for Quadrupedal Robots with Optimized Jumping through Constrained Obstacles — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/CASE49439.2021.9551524" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2107.00773" },
@@ -352,7 +352,7 @@
         "<strong>IEEE International Conference on Robotics and Automation (ICRA)</strong>, 2021",
       noteHtml:
         "<span class=\"pub-award\"><strong>Best Paper Award in Service Robotics — Finalist</strong></span>",
-      thumbnail: { src: "assets/icra2021-guide-dog/guide-jun.gif", alt: "A Quadrupedal Robot Leading Human with Leash-Guided Hybrid Physical Interaction — thumbnail" },
+      thumbnail: { src: "assets/icra2021-guide-dog/cover.gif", alt: "A Quadrupedal Robot Leading Human with Leash-Guided Hybrid Physical Interaction — thumbnail" },
       links: [
         { label: "Publisher", href: "https://doi.org/10.1109/ICRA48506.2021.9561786" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2103.14300" },
@@ -368,7 +368,7 @@
         "Suiyi He, <strong>Jun Zeng</strong>, Bike Zhang, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2021",
-      thumbnail: { src: "assets/acc2021-lane-change/lane-change.png", alt: "Rule-Based Safety-Critical Control Design using Control Barrier Functions with Application to Autonomous Lane Change — thumbnail" },
+      thumbnail: { src: "assets/acc2021-lane-change/cover.png", alt: "Rule-Based Safety-Critical Control Design using Control Barrier Functions with Application to Autonomous Lane Change — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/9482848" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2103.12382" },
@@ -386,7 +386,7 @@
         "<strong>Jun Zeng</strong>, Bike Zhang, Zhongyu Li, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2021",
-      thumbnail: { src: "assets/acc2021-feasibility/reachability.png", alt: "Safety-Critical Control with Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility — thumbnail" },
+      thumbnail: { src: "assets/acc2021-feasibility/cover.png", alt: "Safety-Critical Control with Optimal-decay Control Barrier Function with Guaranteed Point-wise Feasibility — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/9482626" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2103.12375" },
@@ -403,7 +403,7 @@
         "<strong>Jun Zeng*</strong>, Bike Zhang*, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2021",
-      thumbnail: { src: "assets/acc2021-mpc-cbf/avoidance.png", alt: "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function — thumbnail" },
+      thumbnail: { src: "assets/acc2021-mpc-cbf/cover.png", alt: "Safety-Critical Model Predictive Control with Discrete-Time Control Barrier Function — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/9483029" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2007.11718" },
@@ -420,7 +420,7 @@
         "Chenyu Yang, Bike Zhang, <strong>Jun Zeng</strong>, Ayush Agrawal, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, 2020",
-      thumbnail: { src: "assets/iros2020-ball-manipulation/local-spin.gif", alt: "Dynamic Legged Manipulation of a Ball Through Multi-Contact Optimization — thumbnail" },
+      thumbnail: { src: "assets/iros2020-ball-manipulation/cover.gif", alt: "Dynamic Legged Manipulation of a Ball Through Multi-Contact Optimization — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/9341218" },
         { label: "ArXiv", href: "https://arxiv.org/abs/2008.00191" },
@@ -437,7 +437,7 @@
         "<strong>Jun Zeng</strong>, Prasanth Kotaru, Mark W. Mueller, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE Robotics and Automation Letters (RA-L)</strong>, 2020",
-      thumbnail: { src: "assets/ral2020-ppql/waypoint.gif", alt: "Differential Flatness based Path Planning with Direct Collocation on Hybrid Modes for a Quadrotor with a Cable-Suspended Payload — thumbnail" },
+      thumbnail: { src: "assets/ral2020-ppql/cover.gif", alt: "Differential Flatness based Path Planning with Direct Collocation on Hybrid Modes for a Quadrotor with a Cable-Suspended Payload — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/8988166" },
         { label: "YouTube", href: "https://youtu.be/e09RZOx_nZk" },
@@ -466,7 +466,7 @@
         "<strong>Jun Zeng</strong>, Koushil Sreenath",
       venueHtml:
         "<strong>IEEE American Control Conference (ACC)</strong>, 2019",
-      thumbnail: { src: "assets/acc2019-quad-offset-load/performance.png", alt: "Geometric Control of a Quadrotor with a Load Suspended from an Offset — thumbnail" },
+      thumbnail: { src: "assets/acc2019-quad-offset-load/cover.png", alt: "Geometric Control of a Quadrotor with a Load Suspended from an Offset — thumbnail" },
       links: [
         { label: "Publisher", href: "https://ieeexplore.ieee.org/document/8814939" },
       ],

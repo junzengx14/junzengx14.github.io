@@ -30,8 +30,7 @@ js/site.js            Navbar scroll state, scroll-spy, project filter,
                       image probes, footer year
 
 cv/                   LaTeX CV — the authoritative record (see below)
-assets/               Per-paper thumbnails + logos + photos
-assets_files/         Legacy Bootstrap 2 leftovers; only favicon.ico is used
+assets/               Per-paper thumbnails + logos + photos + favicon
 _layouts/ _includes/  Jekyll templates for blog.html only
 _config.yml feed.xml  Jekyll config and RSS
 ```
@@ -56,9 +55,13 @@ PDF**, or the website keeps serving the stale one.
 
 ### `assets/`
 
-- `assets/<venue><year>-<slug>/` — one directory per paper, holding its
-  thumbnail (`cover.png`, or a `.gif`/`.jpg`). Referenced from
-  `js/publications.js`.
+- `assets/<venue><year>-<slug>/` — one directory per paper. **The thumbnail is
+  always `cover.<ext>`** (`.png`, `.jpg` or `.gif`) — that convention is
+  enforced across all 28 folders, so a new paper just needs its image saved as
+  `cover.something`. Referenced from `js/publications.js`.
+  A few folders also keep an unused alternate figure (`still.png` is a static
+  frame of an animated `cover.gif`; others are extra figures from the paper).
+  Nothing references them — they're kept as ready substitutes, not clutter.
 - `assets/education/` — university logos (in use).
 - `assets/profile/` — `hero.jpg` + `portrait.jpg`. **Optional** — see the README
   in that folder.
@@ -164,8 +167,10 @@ Uncomment the four `HIDDEN: … CV` blocks to bring the links back.
 - **Legacy anchors are load-bearing.** `#education`, `#publications`, `#awards`
   and `#professional-activities` are kept from the pre-2026 layout so old
   inbound links still land. Don't rename them.
-- **`assets_files/` is dead weight** except `favicon.ico` — it holds the
-  Bootstrap 2 CSS the site used before the redesign.
+- **`assets_files/` no longer exists.** It held the pre-redesign Bootstrap 2
+  CSS plus ~20 images inherited from the original site template (they were
+  another researcher's paper figures, never Jun's). All removed; `favicon.ico`
+  moved to `assets/favicon.ico`. Recover anything from git history if needed.
 
 ---
 

@@ -1,16 +1,15 @@
-# Profile photos
+# Profile photo
 
-Drop two files here and the homepage picks them up automatically — no code
-changes needed. Until they exist, the page falls back to a gradient hero and a
-placeholder portrait box, so nothing looks broken.
+`portrait.jpg` is the photo shown in the **About Me** section of `index.html`.
+Replace the file and the page picks it up automatically — no code changes.
 
 | File | Used by | Recommended size | Notes |
 |------|---------|------------------|-------|
-| `hero.jpg` | Full-screen banner at the top of `index.html` | ≥ 1920 × 1080, landscape | A dark overlay sits on top, so a bright or busy photo still works. The centre of the image stays visible at every screen width; keep the subject away from the far left/right edges. |
-| `portrait.jpg` | Photo in the About section | ≥ 800 × 1000, portrait (4:5) | Cropped to 4:5 with `object-fit: cover`, centred. |
+| `portrait.jpg` | About section | >= 800 x 1000, portrait (4:5) | Cropped to 4:5 with `object-fit: cover`, centred. The current file is square (2048 x 2048), so roughly 20% of the width is trimmed. |
 
-Both are referenced from:
-- `css/site.css` — `.hero.has-photo` background image
-- `index.html` — `data-bg-src` on `#home`, `data-img-src` on `.portrait`
+Referenced from `index.html` via `data-img-src` on `.portrait`. If the file is
+missing, a neutral placeholder box renders instead of a broken image.
 
-`.jpg` is assumed. To use a different format, update those two paths.
+**There is no hero/banner photo.** The full-screen banner at the top of the page
+is a plain grey gradient by design — see `.hero` in `css/site.css`. Dropping a
+`hero.jpg` in this folder will do nothing; the wiring was removed deliberately.

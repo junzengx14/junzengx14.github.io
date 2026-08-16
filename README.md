@@ -63,8 +63,9 @@ PDF**, or the website keeps serving the stale one.
   frame of an animated `cover.gif`; others are extra figures from the paper).
   Nothing references them — they're kept as ready substitutes, not clutter.
 - `assets/education/` — university logos (in use).
-- `assets/profile/` — `hero.jpg` + `portrait.jpg`. **Optional** — see the README
-  in that folder.
+- `assets/profile/` — `portrait.jpg`, the About-section photo. The hero banner is
+  a plain grey gradient with **no** photo; that wiring was removed deliberately,
+  so adding a `hero.jpg` here does nothing. See the README in that folder.
 - `assets/experience/` — company logos. **Optional** — see the README there.
 
 ---

@@ -140,21 +140,9 @@ a:hover { color: var(--ink); text-decoration: underline; }
   align-items: center;
   overflow: hidden;
   color: #fff;
-  /* fallback shown until js/site.js confirms assets/profile/hero.jpg loads */
-  background: linear-gradient(135deg, #1b2430 0%, #2c3e50 55%, #35506b 100%);
-  background-size: cover;
-  background-position: center;
-}
-
-.hero.has-photo {
-  background-image: url("../assets/profile/hero.jpg");
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  /* Plain grey by design — the banner deliberately carries no photograph.
+     Dark enough that the white heading clears WCAG AA at these type sizes. */
+  background: linear-gradient(135deg, #3f4449 0%, #5c6268 100%);
 }
 
 .hero .container { position: relative; z-index: 2; }
@@ -336,6 +324,7 @@ a:hover { color: var(--ink); text-decoration: underline; }
 /* Cover images range from 0.75:1 to 4.3:1, so `contain` on a fixed 16:9 box —
    `cover` would crop the wide ones into unreadable strips. */
 .paper-thumbnail {
+  position: relative;
   aspect-ratio: 16 / 9;
   background-color: #fff;
   border: 1px solid var(--line);
@@ -343,8 +332,18 @@ a:hover { color: var(--ink); text-decoration: underline; }
   overflow: hidden;
 }
 
+/* The box takes its height from `aspect-ratio`, not an explicit value. A child
+   using `height: 100%` against that can resolve to `auto`, collapsing the link
+   to zero height and taking the image with it — the thumbnail then renders
+   blank. Absolute positioning gives the link a definite box to fill, so the
+   image always has a real height to be `contain`-fitted into. */
 .paper-thumbnail a,
-.paper-thumbnail span { display: block; width: 100%; height: 100%; }
+.paper-thumbnail span {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
 .paper-thumbnail img { width: 100%; height: 100%; object-fit: contain; }
 
 .pub-title {

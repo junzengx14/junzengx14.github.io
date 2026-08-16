@@ -77,18 +77,14 @@
   /* ------------------------------------------------------ image probes --- */
 
   /*
-    Photos and company logos are optional: each element declares the file it
-    wants via data-src, and we only apply the "has photo/logo" class once the
-    image actually loads. Missing files fall back to the CSS placeholder with no
+    The About portrait and the company logos are optional: each element declares
+    the file it wants via data-img-src, and we only swap it in once the image has
+    actually loaded. Missing files fall back to the CSS placeholder — no
     broken-image icon and no layout shift.
+
+    (The hero banner has no photo by design, so there is no background probe.)
   */
   function probeImages() {
-    document.querySelectorAll("[data-bg-src]").forEach(function (el) {
-      var probe = new Image();
-      probe.onload = function () { el.classList.add("has-photo"); };
-      probe.src = el.getAttribute("data-bg-src");
-    });
-
     document.querySelectorAll("[data-img-src]").forEach(function (el) {
       var img = el.querySelector("img");
       if (!img) return;

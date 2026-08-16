@@ -35,9 +35,13 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Research</a></li>
+                    <!-- HIDDEN: Misc nav item — re-enable together with the #projects section below.
                     <li class="nav-item"><a class="nav-link" href="#projects">Misc</a></li>
+                    -->
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <!-- HIDDEN: CV nav item. Uncomment to show it again.
                     <li class="nav-item"><a class="nav-link" href="./cv/main.pdf" target="_blank" rel="noopener">CV</a></li>
+                    -->
                 </ul>
             </div>
         </div>
@@ -50,10 +54,10 @@
         <div class="container">
             <h1>Hi! I&rsquo;m Jun Zeng.</h1>
             <p class="hero-sub">
-                CTO at Cyan Robotics. Working on
+                Roboticist. Working on
                 <span class="rotator">
                     <b>robotics.</b>
-                    <b>optimal control.</b>
+                    <b>machine learning & reinforcement learning.</b>
                     <b>embodied AI.</b>
                 </span>
             </p>
@@ -79,7 +83,7 @@
                     <div class="heading">
                         <h2>About Me</h2>
                     </div>
-                    <p class="about-subtitle">Roboticist &amp; AI/ML Scientist</p>
+                    <p class="about-subtitle"> Programmer &amp; Roboticist</p>
 
                     <p>
                         I&rsquo;m Jun Zeng (曾俊). My work spans robotics, artificial intelligence and autonomous
@@ -107,7 +111,9 @@
                     </p>
 
                     <div class="about-actions">
+                        <!-- HIDDEN: Resume / CV button. Uncomment to show it again.
                         <a class="main-btn" href="./cv/main.pdf" target="_blank" rel="noopener">Resume / CV</a>
+                        -->
 
                         <div class="social-links">
                             <a href="mailto:zengjunsjtu@berkeley.edu" title="Email" aria-label="Email"><i
@@ -147,7 +153,7 @@
                         <div class="cv-body">
                             <div class="cv-head">
                                 <span class="cv-org">Cyan Robotics</span>
-                                <span class="cv-dates">Oct 2025 &ndash; Present</span>
+                                <span class="cv-dates">2025 &ndash; Present</span>
                             </div>
                             <div class="cv-role">Chief Technology Officer &mdash; Shanghai, China</div>
                             <p class="cv-detail">
@@ -166,7 +172,7 @@
                         <div class="cv-body">
                             <div class="cv-head">
                                 <span class="cv-org"><a target="_blank" rel="noopener" href="https://www.getcruise.com/">Cruise LLC</a></span>
-                                <span class="cv-dates">Jul 2022 &ndash; Oct 2025</span>
+                                <span class="cv-dates">2022 &ndash; 2025</span>
                             </div>
                             <div class="cv-role">Senior AI/ML Scientist &mdash; San Francisco, CA</div>
                             <p class="cv-detail">
@@ -200,7 +206,7 @@
                         <div class="cv-body">
                             <div class="cv-head">
                                 <span class="cv-org">University of California, Berkeley</span>
-                                <span class="cv-dates">Aug 2017 &ndash; May 2022</span>
+                                <span class="cv-dates">2017 &ndash; 2022</span>
                             </div>
                             <div class="cv-role">Ph.D. in Mechanical Engineering</div>
                             <p class="cv-detail">
@@ -217,7 +223,7 @@
                         <div class="cv-body">
                             <div class="cv-head">
                                 <span class="cv-org"><a target="_blank" rel="noopener" href="https://www.polytechnique.edu/en">Ecole Polytechnique</a></span>
-                                <span class="cv-dates">Mar 2015 &ndash; Aug 2017</span>
+                                <span class="cv-dates">2015 &ndash; 2017</span>
                             </div>
                             <div class="cv-role">Diplôme d&rsquo;ingénieur in Applied Mathematics and Mechanics</div>
                         </div>
@@ -230,7 +236,7 @@
                         <div class="cv-body">
                             <div class="cv-head">
                                 <span class="cv-org"><a target="_blank" rel="noopener" href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a></span>
-                                <span class="cv-dates">Sep 2012 &ndash; May 2016</span>
+                                <span class="cv-dates">2012 &ndash; 2016</span>
                             </div>
                             <div class="cv-role">Bachelor of Science and Engineering in Automation</div>
                         </div>
@@ -258,19 +264,16 @@
         </div>
     </section>
 
-    <!-- ======================================================= projects === -->
+    <!-- ===================================================== projects === -->
     <!--
-      TODO: replace the placeholder tiles below with real entries.
+      HIDDEN: the "Misc" section. Kept here, unrendered, until there is real
+      content for it. README.md > "Hidden sections" explains what it contains,
+      how to add tiles, and how to switch it back on.
 
-      To add one, copy a block and set:
-        data-category  robots | outdoors | life   (must match a filter-bar entry)
-        <img>          optional — drop it inside .item-content; without an <img>
-                       the CSS gradient shows instead, so nothing looks broken
-        h6 / p         title and caption shown on hover
+      To restore: delete this opening comment marker and the closing one at the
+      end of the section, then uncomment the Misc nav item in index.html,
+      publications.html and service.html.
 
-      To add a category, add <li data-filter="yourcat">Your Cat</li> to the
-      filter bar and use data-category="yourcat" on the tiles.
-    -->
     <section id="projects" class="section">
         <div class="container">
             <div class="heading text-center">
@@ -341,6 +344,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- ============================================= awards and service === -->
     <section id="awards" class="section bg-gray">
@@ -392,7 +396,7 @@
               .blog-empty block and uncomment the card row underneath.
             -->
             <div class="blog-empty">
-                <p>No posts yet — writing about robotics, control and embodied AI is on the list.</p>
+                <p>No posts yet</p>
                 <a class="main-btn" href="./blog.html">Visit blog</a>
             </div>
 

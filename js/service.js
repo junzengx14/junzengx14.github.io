@@ -21,7 +21,7 @@
       "Automatica, 2022 - 2026",
       "Control Engineering Practice, 2025 - 2026",
       "IEEE Access, 2022 - 2025",
-      "IEEE Control Systems Letters (L-CSS), 2023 - 2026",
+      "IEEE Control Systems Letters (L-CSS), 2023 - 2027",
       "IEEE Open Journal of Control Systems (OJ-CSYS), 2023 - 2025",
       "IEEE Robotics and Automation Letters (RA-L), 2020 - 2026",
       "IEEE Transactions on Automatic Control (TAC), 2021 - 2026",
@@ -39,7 +39,7 @@
 
     conferences: [
       "AAAI Conference on Artificial Intelligence (AAAI), 2022 - 2024",
-      "American Control Conference (ACC), 2023 - 2026",
+      "American Control Conference (ACC), 2023 - 2027",
       "Annual Conference of the IEEE Industrial Electronics Society (IECON), 2023 - 2025",
       "European Control Conference (ECC), 2023 - 2025",
       "IEEE Conference on Control Technology and Applications (CCTA), 2024 - 2025",

@@ -25,7 +25,7 @@
       "IEEE Open Journal of Control Systems (OJ-CSYS), 2023 - 2025",
       "IEEE Robotics and Automation Letters (RA-L), 2020 - 2026",
       "IEEE Transactions on Automatic Control (TAC), 2021 - 2026",
-      "IEEE Transactions on Automation Science and Engineering (T-ASE), 2026",
+      "IEEE Transactions on Automation Science and Engineering (T-ASE), 2022 - 2026",
       "IEEE Transactions on Control of Network Systems (TCNS), 2021 - 2025",
       "IEEE Transactions on Control Systems Technology (T-CST), 2021 - 2026",
       "IEEE Transactions on Vehicular Technology (T-VT), 2025 - 2027",

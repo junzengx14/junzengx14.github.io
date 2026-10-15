@@ -34,8 +34,8 @@
       "IEEE Transactions on Robotics (T-RO), 2023 - 2026",
       "IEEE Transactions on Systems, Man, and Cybernetics (TSMC), 2026",
       "IEEE/ASME Transactions on Mechatronics (T-Mech), 2022 - 2027",
-      "International Journal of Robotics Research (IJRR), 2023 - 2025",
-      "International Journal of Robust and Nonlinear Control (RNC), 2023 - 2025",
+      "International Journal of Robotics Research (IJRR), 2023 - 2026",
+      "International Journal of Robust and Nonlinear Control (RNC), 2023 - 2026",
     ],
 
     conferences: [
@@ -45,7 +45,7 @@
       "European Control Conference (ECC), 2023 - 2025",
       "IEEE Conference on Control Technology and Applications (CCTA), 2024 - 2025",
       "IEEE Conference on Decision and Control (CDC), 2022 - 2026",
-      "IEEE International Conference on Robotics and Automation (ICRA), 2020 - 2026",
+      "IEEE International Conference on Robotics and Automation (ICRA), 2020 - 2027",
       "IEEE International Conference on Unmanned Aircraft Systems (ICUAS), 2020 - 2021",
       "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021 - 2025",
       "Learning for Dynamics & Control Conference (L4DC), 2023 - 2026",

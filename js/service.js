@@ -30,6 +30,7 @@
       "IEEE Transactions on Control Systems Technology (T-CST), 2021 - 2026",
       "IEEE Transactions on Vehicular Technology (T-VT), 2025 - 2027",
       "IEEE Transactions on Industrial Electronics (TIE), 2024 - 2027",
+      "IEEE Transactions on Industrial Informatics (TII), 2026",
       "IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2024 - 2026",
       "IEEE Transactions on Robotics (T-RO), 2023 - 2026",
       "IEEE Transactions on Systems, Man, and Cybernetics (TSMC), 2026",
